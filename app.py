@@ -47,25 +47,25 @@ def layout(*args):
 
 footer_args = [
     link('mailto:emmanuel.pean@gmail.com',
-         image('https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/images/email.png', height=px(30))),
+         image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/email.png', height=px(30))),
     "&nbsp &nbsp ",
     link('https://www.researchgate.net/profile/Emmanuel-Pean-2',
-         image('https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/images/researchgate.png',
+         image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/researchgate.png',
                height=px(30))),
     "&nbsp &nbsp ",
     link('https://twitter.com/emmanuel_pean',
-         image('https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/images/twitter.png',
+         image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/twitter.png',
                height=px(30))),
     "&nbsp &nbsp ",
     link('https://orcid.org/0000-0002-3056-5286',
-         image('https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/images/orcid.png', height=px(30))),
+         image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/orcid.png', height=px(30))),
     "&nbsp &nbsp ",
     link('https://www.linkedin.com/in/emmanuelpean',
-         image('https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/images/linkedin.png',
+         image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/linkedin.png',
                height=px(30))),
     "&nbsp &nbsp ",
     link('https://www.scopus.com/authid/detail.uri?authorId=57190185586',
-         image('https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/images/scopus.png',
+         image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/scopus.png',
                height=px(30)))]
 
 
@@ -227,11 +227,11 @@ with col3:
     st.warning("""
     #### Posters
     
-    * “[Investigating the superoxide formation and stability in mesoporous carbon perovskite solar cells with an aminovaleric acid additive](https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/posters/Sunrise_2020.pdf)”, *SUNRISE online conference*, 2020 (prize for “Best poster”)
+    * “[Investigating the superoxide formation and stability in mesoporous carbon perovskite solar cells with an aminovaleric acid additive](https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/posters/Sunrise_2020.pdf)”, *SUNRISE online conference*, 2020 (prize for “Best poster”)
     
-    * “[Investigating charge carrier recombination in perovskite materials](https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/posters/RSC150120.pdf)”, *RSC Next Generation Materials for Solar Photovoltaics*, London, UK, 2020
+    * “[Investigating charge carrier recombination in perovskite materials](https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/posters/RSC150120.pdf)”, *RSC Next Generation Materials for Solar Photovoltaics*, London, UK, 2020
     
-    * “[Shining a light on the photoluminescence behaviour of methylammonium lead iodide perovskite: investigating the competing photobrightening and photodarkening processes](https://raw.githubusercontent.com/Emmanuelpean/PersonnalWebsite/main/posters/SerSol200319.pdf)”, *Sêr Solar - end of project celebration*, 2019.""",
+    * “[Shining a light on the photoluminescence behaviour of methylammonium lead iodide perovskite: investigating the competing photobrightening and photodarkening processes](https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/posters/SerSol200319.pdf)”, *Sêr Solar - end of project celebration*, 2019.""",
                icon="📊")
 
 components.html("""<script async defer data-website-id="820a9cf5-cbf2-430f-aff1-c6b647194d74" 
