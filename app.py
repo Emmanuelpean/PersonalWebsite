@@ -123,10 +123,6 @@ with col1:
 
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("""
-    #### Education & Academic Carrier""")
-    st.image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/education.png')
-
     st.success("""
     #### Awards
     * 2021 Swansea University Material Research Centre Rose Bowl prize for best thesis
@@ -135,6 +131,10 @@ with col1:
     * Research as Art: 2017 Imagination and 2018 runner-up prizes
     * 2016 Best Master’s internship in material science in the west of France awarded by the Société Française de Métallurgie et Matériaux""",
                icon="🏆")
+
+    st.markdown("""
+    #### Education & Academic Carrier""")
+    st.image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/images/Education.png')
 
     st.warning("""
     #### Scholarship, Grants, Fellowships and Memberships
