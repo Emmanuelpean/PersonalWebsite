@@ -122,7 +122,7 @@ with col1:
         opacity=0.8))
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 5], ticklabelstep=1)))
 
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
     st.success("""
     #### Awards
