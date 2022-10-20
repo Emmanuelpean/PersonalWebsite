@@ -78,8 +78,7 @@ def render_image(svg_file, width=100, itype='svg'):
 
     with open(svg_file, "rb") as ofile:
         svg = base64.b64encode(ofile.read()).decode()
-        return '<center><img src="data:image/%s+xml;base64,%s" id="responsive-image" width="%s%%"/></center>' % (
-        itype, svg, width)
+        return '<center><img src="data:image/%s+xml;base64,%s" id="responsive-image" width="%s%%"/></center>' % (itype, svg, width)
 
 
 st.set_page_config('Dr Emmanuel V. Péan', layout='wide')
@@ -92,7 +91,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.info("""
-    #### About me
+    #### About Me
     I am an early career researcher who has recently completed a PhD on the photochemistry of perovskite materials for use 
     in photovoltaics. I am deeply concerned about the state of the environment and climate change. I am hardworking, 
     diligent and always ready to go beyond my assignment to produce high quality work. My programming skills allow me to 
@@ -123,6 +122,10 @@ with col1:
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 5], ticklabelstep=1)))
 
     st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("""
+    #### Education & Academic Carrier""")
+    st.image('https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/education.png')
 
     st.success("""
     #### Awards
@@ -166,7 +169,7 @@ with col2:
                icon="🔬")
 
     st.warning("""
-    #### Main publications
+    #### Main Publications
     
     * “[Interpreting time-resolved photoluminescence of perovskite materials](https://doi.org/10.1039/D0CP04950F)”, Physical Chemistry Chemical Physics, 2020
 
@@ -182,7 +185,7 @@ with col2:
                icon="📚")
 
     st.success("""
-    #### Teaching experience
+    #### Teaching Experience
     * 1st year and 2nd year Matlab demonstrator at Swansea University.
     * Lecture on UV-Vis spectroscopy to 1st year engineering doctorate students part of the Application of Instrumental and Analytical techniques course at Swansea University.
     * Supervision of MSc project: Investigating Diffusion and Charge Carrier Extraction on Charge Carrier Dynamics in Perovskite Thin Films""",
@@ -190,7 +193,7 @@ with col2:
 
 with col3:
     st.warning("""
-    #### My websites
+    #### My Websites
     **[PEARS](https://pears-tool.herokuapp.com)** is a tool to easily fit time-resolved photoluminescence (TRPL) data of perovskite materials. Functionalities include:
     * 2 charge carrier recombination models can be used
     * Basic data processing
