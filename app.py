@@ -93,7 +93,7 @@ st.markdown("""#""")
 if 'image_index' not in st.session_state:
     st.session_state.image_index = 0
 if 'images' not in st.session_state:
-    images = ['RaA/' + f for f in os.listdir('RaA') if f.endswith('.pdf')]
+    images = ['RaA/' + f for f in os.listdir('RaA') if f.endswith('.jpeg')]
     st.session_state.images = [Image.open(image) for image in images]
 
 
