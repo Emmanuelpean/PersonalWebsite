@@ -4,6 +4,8 @@ import plotly.graph_objects as go
 import base64
 from htbuilder import HtmlElement, div, hr, a, p, img, styles
 from htbuilder.units import percent, px
+import os
+from PIL import Image
 
 
 def image(src_as_string, **style):
@@ -83,9 +85,17 @@ def render_image(svg_file, width=100, itype='svg'):
 
 st.set_page_config('Dr Emmanuel V. Péan', layout='wide')
 layout(*footer_args)
-st.markdown("""%s""" % render_image("images/photo.png", 15, 'png'), unsafe_allow_html=True)  # main logo
+st.markdown("""%s""" % render_image("images/photo.png", 15, 'png'), unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center;'>Dr Emmanuel V. Péan</h1>", unsafe_allow_html=True)
 st.markdown("""#""")
+
+# Load the images
+if 'image_index' not in st.session_state:
+    st.session_state.image_index = 0
+if 'images' not in st.session_state:
+    images = ['RaA/' + f for f in os.listdir('RaA') if f.endswith('.pdf')]
+    st.session_state.images = [Image.open(image) for image in images]
+
 
 col1, col2, col3 = st.columns(3)
 
@@ -236,5 +246,16 @@ with col3:
     
     * “[Shining a light on the photoluminescence behaviour of methylammonium lead iodide perovskite: investigating the competing photobrightening and photodarkening processes](https://raw.githubusercontent.com/Emmanuelpean/PersonalWebsite/main/posters/SerSol200319.pdf)”, *Sêr Solar - end of project celebration*, 2019.""",
                icon="📊")
+
+    st.markdown("""
+    #### Gallery""")
+    st.image(st.session_state.images[st.session_state.image_index], use_column_width=True)
+
+    if st.button('Next'):
+        if st.session_state.image_index == len(st.session_state.images) - 1:
+            st.session_state.image_index = 0
+        else:
+            st.session_state.image_index += 1
+
 
 components.html("""<script async defer data-website-id="43133376-d4e1-4b80-bec4-4e112e70fa31" src="https://pears-tracking.herokuapp.com/umami.js"></script>""")
