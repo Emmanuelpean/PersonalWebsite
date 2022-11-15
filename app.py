@@ -112,9 +112,8 @@ with col1:
     #### Skills
     Hover on a category for more information""")
     fig = go.Figure(data=go.Barpolar(
-        r=[4.5, 4, 4, 3.5, 4, 4],
-        theta=['Python Programming', 'Data Processing', 'Data Presentations', '3D Modelling',
-               '3D Printing', 'Experiment automation'],
+        r=[4.5, 4.5, 4, 3.5, 4, 4.5],
+        theta=['Python Programming', 'Data Processing', 'Data Presentations', '3D Modelling', '3D Printing', 'Experiment automation'],
         text=[
             'I mainly use Python for data processing and analysing data,<br>as well as simulations (*e.g.* charge carrier recombination),<br>to automate experiments, and website making.',
             'Thanks to my programming knowledge, I am able to quickly<br>perform complex data processing on large amount of data',
