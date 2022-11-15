@@ -112,20 +112,19 @@ with col1:
     #### Skills
     Hover on a category for more information""")
     fig = go.Figure(data=go.Barpolar(
-        r=[4.5, 4, 2, 4, 2.5, 4, 4],
-        theta=['Python Programming', 'Data Processing', 'Matlab Programming', 'Data Presentations', '3D Modelling',
+        r=[4.5, 4, 4, 3.5, 4, 4],
+        theta=['Python Programming', 'Data Processing', 'Data Presentations', '3D Modelling',
                '3D Printing', 'Experiment automation'],
         text=[
             'I mainly use Python for data processing and analysing data,<br>as well as simulations (*e.g.* charge carrier recombination),<br>to automate experiments, and website making.',
             'Thanks to my programming knowledge, I am able to quickly<br>perform complex data processing on large amount of data',
-            'I used to a Matlab student demonstrator and thus know the basics of the language',
             'I take pride in presenting my research in the most accessible way,<br>making sure that my figures are as clear and understandable as possible',
             'I use Solidworks to design models for 3D printing',
             'I use 3D printing in order to  build experimental setups and automate experiments',
             'Thanks to my programming and 3D printing skills, I am able to automatise my experiments,<br>which improves their reliability and saves me time'],
         hoverinfo='text',
         width=[0.7] * 7,
-        marker_color=["#E4FF87", '#709BFF', '#FFAA70', '#FFDF70', '#709BFF', '#B6FFB4', '#FFAA70'],
+        marker_color=["#E4FF87", '#709BFF', '#FFDF70', '#709BFF', '#B6FFB4', '#FFAA70'],
         marker_line_color="black",
         marker_line_width=1.5,
         opacity=0.8))
