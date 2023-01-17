@@ -256,4 +256,4 @@ with col3:
             st.session_state.image_index += 1
 
 
-components.html("""<script async defer data-website-id="43133376-d4e1-4b80-bec4-4e112e70fa31" src="https://pears-tracking.herokuapp.com/umami.js"></script>""")
+components.html("""<script async defer src="https://analytics.umami.is/script.js" data-website-id="ab848eb9-2dce-49b8-b029-aef2fcaf6c47"></script>""")
